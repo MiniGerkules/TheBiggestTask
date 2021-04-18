@@ -122,7 +122,7 @@ int main()
         std::cout << source[i] << " -- " << recipient[i] << std::endl;
     }
 
-    recipient = reinterpret_cast<int*>(MyMemoryCopy(source, recipient, 8));
+    MyMemoryCopy(source, recipient, 8);
     std::cout << "\nArrays after copying:" << std::endl;
 
     for (size_t i = 0; i < 5; ++i)

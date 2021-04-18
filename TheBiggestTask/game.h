@@ -3,10 +3,10 @@
 
 enum class Key
 {
-	Up = 'w',
-	Down = 's',
-	Left = 'a',
-	Right = 'd'
+	UP = 'w',
+	DOWN = 's',
+	LEFT = 'a',
+	RIGHT = 'd'
 };
 
 class GameObject
@@ -105,16 +105,16 @@ public:
 	{
 		switch (key)
 		{
-		case Key::Up:
+		case Key::UP:
 			++verticalAngle;
 			break;
-		case Key::Down:
+		case Key::DOWN:
 			--verticalAngle;
 			break;
-		case Key::Left:
+		case Key::LEFT:
 			--horizontalAngle;
 			break;
-		case Key::Right:
+		case Key::RIGHT:
 			++horizontalAngle;
 			break;
 		default:
@@ -148,16 +148,16 @@ public:
 	{
 		switch (key)
 		{
-		case Key::Up:
+		case Key::UP:
 			++coordinateY;
 			break;
-		case Key::Down:
+		case Key::DOWN:
 			--coordinateY;
 			break;
-		case Key::Left:
+		case Key::LEFT:
 			--coordinateX;
 			break;
-		case Key::Right:
+		case Key::RIGHT:
 			++coordinateX;
 			break;
 		default:

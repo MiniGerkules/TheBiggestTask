@@ -8,11 +8,7 @@ private:
 	double Im;
 
 public:
-	Complex()
-		: Re(0), Im(0)
-	{}
-
-	explicit Complex(double Re, double Im)
+	explicit Complex(double Re = 0, double Im = 0)
 		: Re(Re), Im(Im)
 	{}
 
